@@ -12,6 +12,9 @@ const io = new Server(httpServer, {
 });
 var clients = {};
 var connectCounter = 0;
+app.get("/", (req, res) => {
+  res.send("Hello Boi");
+});
 // io.on("connection", (socket) => {
 //   console.log(
 //     "User Joined: " +
